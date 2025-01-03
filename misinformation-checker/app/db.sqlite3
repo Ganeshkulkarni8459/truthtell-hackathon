@@ -1,0 +1,8 @@
+CREATE TABLE MisinformationResult (
+    id INTEGER PRIMARY KEY AUTOINCREMENT, -- Unique ID
+    url TEXT NOT NULL, -- URL of the scraped content
+    misinformation_score REAL NOT NULL, -- Misinformation score
+    classification TEXT NOT NULL, -- Classification (e.g., Misinformation or True Information)
+    fact_check_results TEXT NOT NULL, -- Fact-Check Results
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP -- Timestamp of the record
+);
